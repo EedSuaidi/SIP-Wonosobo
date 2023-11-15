@@ -21,6 +21,10 @@ body {
     background-color: #e96500;
 }
 
+.button-masuk:active {
+    background-color: #db5f00 !important;
+}
+
 .active-page {
     color: #FF6D00!important;
 }
@@ -37,8 +41,8 @@ body {
 
 .hero {
     height: 800px;
-    background-image: url(../img/background.webp);
-    background-size: contain;
+    background-image: url(../img/background.svg);
+    background-size: 1100px;
     background-repeat: no-repeat;
 }
 
@@ -77,6 +81,21 @@ body {
     border-radius: 20px;
 }
 
+.category-text::after {
+    margin-bottom: 25px;
+    display: block;
+    content: "";
+    width: 400px;
+    height: 0.18rem;
+    border-radius: 2px;
+    background-color: #FF6D00;
+    margin: 10px auto 30px auto;
+}
+
+.category-text-span {
+    color: #FF6D00;
+}
+
 .card-pelatihan {
     border-radius: 30px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -89,7 +108,7 @@ body {
 .footer-body {
     padding-top: 100px;
     background-color: #1D1534;
-    min-height: 550px;
+    min-height: 600px;
     color: white;
 }
 
@@ -116,6 +135,44 @@ body {
     height: 0.18rem;
     border-radius: 2px;
     background-color: white;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 400px;
+        margin-bottom: 50px;
+        text-align: center;
+        background-size: 850px;
+    }
+
+    .hero > div {
+        display: block !important;
+        padding-top: 100px;
+    }
+
+    .hero-text > h2 {
+        font-weight: 800;
+        font-size: 30px;
+    }
+
+    .hero-text > p {
+        font-size: 12px;
+    }
+
+    .hero-image {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .hero-image > img {
+        display: none;
+    }
+
+    .category-text::after {
+        width: auto;
+    }
 }
 
 
