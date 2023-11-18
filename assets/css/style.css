@@ -98,7 +98,26 @@ body {
 
 .card-pelatihan {
     border-radius: 30px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card-pelatihan:hover {
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    border-color: white;
+}
+
+.card-image {
+    border-radius: 30px;
+    
+}
+
+.card-pelatihan img {
+    transition: 0.3s;
+}
+
+.card-pelatihan:hover img {
+    transform: scale(1.1);
 }
 
 .card-description {
@@ -137,7 +156,12 @@ body {
     background-color: white;
 }
 
+.list a {
+    color: white;
+    text-decoration: none;
+}
 
+/* Phone Screen */
 
 @media screen and (max-width: 768px) {
     .hero {
@@ -170,9 +194,18 @@ body {
         display: none;
     }
 
+    .card-image {
+        margin-bottom: 15px;
+    }
+
     .category-text::after {
         width: auto;
     }
 }
 
-
+@media screen and (min-width: 1600px) {
+    .hero {
+        height: 1200px;
+        background-size: 1400px;
+    }
+}
