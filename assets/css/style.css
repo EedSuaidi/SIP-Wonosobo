@@ -100,13 +100,14 @@ body {
 
 .daftar-button:active {
     background-color: white !important;
+    color: #FF6D00 !important;
 }
 
 /* Section Pelatihan */
 
 .pelatihan h2 {
     font-family: Nunito;
-    font-weight: 700;
+    font-weight: 700 !important;
     font-size: 18px;
     color: #FF6D00;
     width: 200px;
@@ -271,5 +272,8 @@ body {
     .hero {
         height: 1200px;
         background-size: 1400px;
+    }
+    .filter-kategori {
+        top: 1500px;
     }
 }
